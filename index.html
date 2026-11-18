@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife Conservation | Home</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="scripts/navigation.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+</head>
+<body>
+<!-- Render wildlife page content. -->
+    <header class="top-nav">
+        <a href="index.html" class="logo-link" aria-label="Wildlife home"><img src="assets/images/logo.png" alt="Wildlife logo"></a>
+        <button class="menu-button" aria-expanded="false" aria-controls="main-nav">Menu ☰</button>
+        <nav class="nav-links" id="main-nav" aria-label="Main navigation"></nav>
+    </header>
+    <main>
+        <section class="category-section" aria-label="Explore animal categories">
+            <a class="category-card carnivores" href="pages/category.html?category=carnivores">
+                <span class="category-content"><span class="category-arrow" aria-hidden="true">↑</span><span class="category-name">Carnivore</span></span>
+            </a>
+            <a class="category-card birds" href="pages/category.html?category=birds">
+                <span class="category-content"><span class="category-arrow" aria-hidden="true">↑</span><span class="category-name">Birds of<br>Prey</span></span>
+            </a>
+            <a class="category-card herbivores" href="pages/category.html?category=herbivores">
+                <span class="category-content"><span class="category-arrow" aria-hidden="true">↑</span><span class="category-name">Herbivore</span></span>
+            </a>
+            <a class="category-card reptiles" href="pages/category.html?category=reptiles">
+                <span class="category-content"><span class="category-arrow" aria-hidden="true">↑</span><span class="category-name">Reptiles</span></span>
+            </a>
+        </section>
+        <section class="conservation-section">
+            <div class="conservation-intro">
+                <h1>Want To Help Make<br>A Difference?</h1>
+                <p>These organisations make a difference in protecting our wildlife and ecosystems.</p>
+                <p>Help by donating to assist them</p>
+            </div>
+            <div class="organisation-panel">
+                <div class="organisation"><div><h2>THE WWF</h2><p>The World Wide Fund for Nature</p></div><a href="https://www.worldwildlife.org/" target="_blank" rel="noopener noreferrer">worldwildlife.org</a></div>
+                <div class="organisation"><div><h2>THE MCS</h2><p>The Marine Conservation Society</p></div><a href="https://www.mcsuk.org/" target="_blank" rel="noopener noreferrer">mcsuk.org</a></div>
+                <div class="organisation"><div><h2>THE AWF</h2><p>The African Wildlife Foundation</p></div><a href="https://www.awf.org/" target="_blank" rel="noopener noreferrer">awf.org</a></div>
+            </div>
+        </section>
+    </main>
+<script src="scripts/motion.js" defer></script>
+</body>
+</html>

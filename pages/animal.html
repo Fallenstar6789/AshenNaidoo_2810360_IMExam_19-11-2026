@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<!-- Load styles and scripts. --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Animal Information | Wildlife</title><link rel="stylesheet" href="../styles/style.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script><script src="../scripts/navigation.js" defer></script><script src="../scripts/config.js" defer></script><script src="../scripts/animal.js" defer></script></head>
+<body>
+<!-- Render wildlife page content. --><header class="top-nav"><a class="logo-link" href="../index.html" aria-label="Wildlife home"><img src="../assets/images/logo.png" alt="Wildlife logo"></a><button class="menu-button" aria-expanded="false" aria-controls="main-nav">Menu ☰</button><nav class="nav-links" id="main-nav" aria-label="Main navigation"></nav></header>
+<main><section class="page-heading animal-heading"><h1>Animal Search</h1><form class="animal-search" action="animal.html" method="get"><label class="sr-only" for="animal-name">Animal name</label><input id="animal-name" name="name" placeholder="Enter Animal Name Here..." required><button type="submit">GO</button></form></section>
+<div class="animal-status" id="animal-status" role="status" aria-live="polite">Loading animal information...</div>
+<section class="animal-profile" id="animal-profile" hidden><div class="animal-left"><h2 id="animal-title"></h2><div class="animal-photo"><img id="animal-image" alt="" hidden><span id="image-fallback">Loading photograph...</span></div><p class="animal-description" id="animal-description">Loading description...</p></div><div class="animal-facts"><div class="scientific-heading" id="scientific-name"></div><table><tbody><tr><th scope="row">Type:</th><td id="animal-type"></td></tr><tr><th scope="row">Diet:</th><td id="animal-diet"></td></tr><tr><th scope="row">Lifespan:</th><td id="animal-lifespan"></td></tr><tr><th scope="row">Size:</th><td id="animal-size"></td></tr><tr><th scope="row">Weight:</th><td id="animal-weight"></td></tr></tbody></table></div></section>
+</main><script src="../scripts/motion.js" defer></script>
+</body></html>
